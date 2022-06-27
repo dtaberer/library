@@ -22,9 +22,9 @@ class Book {
 
 /*
 * Set up some node descriptors
-* context. Puting them in a hash
-* makes it easier to look up the required node
-* when using the editor.
+* context. Putting them in a hash
+* gives a convenient look-up when
+* using an editor such as Visual Studio.
 *********************************************/
 const nodes = {
   form: document.getElementById("Form"),
