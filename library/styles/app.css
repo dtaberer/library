@@ -1,0 +1,268 @@
+
+.library-container {
+  padding: 30px;
+  margin: 0 100px;
+  font-family: sans-serif;
+  max-width: 90%;
+}
+
+.library-table {
+  border-collapse: collapse;
+  margin: 15px 0;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.library-table th {
+  background-color: #496c98;
+  color: white;
+  min-width: auto;
+}
+
+.library-table th,
+.library-table td {
+    padding: 8px 15px;
+    text-align: left;
+    min-height: 200px;
+    max-height: 200px;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+}
+
+.library-table tbody tr {
+  border-bottom: 1px solid #d1d5de;
+}
+
+.library-table tbody tr:nth-of-type(even) .content-row {
+  background-color: #d1d5de;
+}
+
+.library-table tbody tr:last-of-type .content-row {
+  border-bottom: 2px solid #d1d5de;
+}
+
+.library-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+.library-container .new-book-button {
+  position: relative;
+  border: none;
+  min-height: 35px;
+  min-width: 35px;
+  max-height: 35px;
+  max-width: 35px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 25px;
+  background-color: #0a69ad;
+  color: white;
+  padding: 2px;
+  margin:10px;
+ }
+
+ .library-container .new-book-button:hover {
+   cursor: pointer;
+   background-color: #057cd1;
+ }
+
+
+input {
+  border-radius: 5px;
+  border-color: rgb(226, 226, 226);
+  border-width: 1px;
+  font-size: inherit;
+}
+
+.checkbox-label {
+  margin: 10px 10px;
+  padding-top: 100px;;
+  
+}
+
+.header-container {
+  display: flex;
+  min-width: 50%;
+  max-width: 50%;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.header-title {
+  font-family: fantasy;
+  color: #496c98;
+  font-size: 30px;
+  font-weight: 500;
+  display: inline-flex;
+  width: 100%;
+  min-width: 100%;
+  min-width: 100%;
+}
+
+#NewBookButton {
+  display:inline-block
+}
+
+.input,
+.save-button {
+  width: 90%;
+  padding: 8px;
+  margin: 5px;
+  border-width: 1px;
+  font-size: inherit;
+}
+
+.save-button {
+  background-color: #45963c;
+  border:none;
+  cursor: pointer;
+  color: white;
+  height: 50px;
+}
+
+.row-button {
+  margin: 0;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1px;
+  min-height: 20px;
+  max-height: 20px;
+  min-width: 90px;
+  max-width: 90px;
+  outline: 0;
+  padding: 12px 2px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.edit-button {
+  background: #426ac0;
+  color: white;
+}
+
+.trash-button {
+  background-color: #ac3733;
+  color:white;
+}
+
+.trash-button:hover,
+.trash-button:active {
+  background-color: #ac3733;
+}
+
+.edit-button:hover,
+.edit-button:active {
+  background-color: #3559a6;
+}
+
+.book-title {
+  min-width: 240px;
+  max-width: 240px;
+}
+
+.book-author {
+  min-width: 200px;
+  max-width: 200px;
+}
+
+.book-pages {
+  min-width: 100px;
+  max-width: 100px;
+}
+
+.book-read {
+  min-width: 50px;
+  max-width: 50px;
+}
+
+.modal {
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  overflow: auto;
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #0a69ad;
+  color: white;
+  text-align: center;
+}
+
+.modal-body {
+  padding: 30px 16px;
+}
+
+.modal-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 50%;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  transform: translate(-50%, -50%);
+}
+
+.modal-footer {
+  border-top: 1px solid rgb(225, 225, 225);
+  padding: 20px 0 20px 20px;
+  background-color: white;
+  color: white;
+  border-radius: 5px;
+}
+
+.close-button {
+  margin-top: 10px;;
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: #3093d9;
+  font-size: 30px;
+}
+
+.close-button:hover {
+  background-color: #08578f;
+  cursor: pointer;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.form-controls {
+  padding: 5px;
+}
