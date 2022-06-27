@@ -29,8 +29,8 @@ const templates = (function() {
   }
 
   return {
-    tableHeader: tableHeader,
-    tableRow: tableRow,
+    tableHeader,
+    tableRow,
   }
 })();
 
