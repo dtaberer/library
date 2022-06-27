@@ -138,7 +138,6 @@ Library.prototype.addRowButtonListeners = function() {
 * row level edit button
 *********************************************/
 Library.prototype.edit = function(book) {
-  console.log("test")
   const modal = nodes.modal;
   nodes.modalTitle.innerHTML = "Edit Book Details";
   nodes.inputId.value = book.id;
