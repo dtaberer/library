@@ -202,7 +202,7 @@ input {
   visibility: hidden;
   transform: scale(1.1);
   overflow: auto;
-  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  transition: visibility 0s linear 0.45s, opacity 0.45s 0s, transform 0.45s;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -260,7 +260,7 @@ input {
   opacity: 1;
   visibility: visible;
   transform: scale(1.0);
-  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  transition: visibility 0s linear 0s, opacity 0.45s 0s, transform 0.45s;
 }
 
 .form-controls {
