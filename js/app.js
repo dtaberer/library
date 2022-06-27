@@ -18,8 +18,6 @@ class Book {
     this.pages = pages;
     this.read = read;
   }
-
-
 }
 
 /*
@@ -72,7 +70,6 @@ function defineBookProperties(obj, value) {
   });
 }
 
-
 /*
 * Method for adding new books to the library
 *********************************************/
@@ -85,7 +82,6 @@ Library.prototype.add = function(title, author, pages, read) {
   nodes.books.innerHTML += templates.tableRow(book);
 }
 
-
 /*
 * Soft delete by specified book
 *********************************************/
@@ -93,7 +89,6 @@ Library.prototype.markAsDeleted = function(id) {
   this.inventory[id].deleted = true;
   this.list();
 }
-
 
 /*
 * As we are doing a soft delete, a method
@@ -182,7 +177,6 @@ Library.prototype.insert = function() {
   this.add(params.title, params.author, params.pages, params.read);
 }
 
-
 function toggleModal() {
   nodes.modal.classList.toggle("show-modal");
 }
@@ -219,7 +213,6 @@ window.addEventListener("load", () => {
 let library = new Library;
 let insert = library.insert.bind(library);
 let update = library.update.bind(library);
-
 
 /*
 * Set up some initial books for testing
